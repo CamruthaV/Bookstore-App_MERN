@@ -1,5 +1,5 @@
 # Online Bookstore Application Using MERN Stack
-===================================================
+
 ### Project Overview
 This is a simple online bookstore application built using the MERN (MongoDB, Express, React,
 Node.js) stack. The application allows users to add and view books in a tabular or card format.
