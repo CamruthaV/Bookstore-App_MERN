@@ -4,7 +4,7 @@ import booksRoute from "./routes/booksRoute.js"
 import cors from "cors";
 
 const PORT = process.env.PORT || 5000;
-const MongoUrl = proces.env.MONGO_URI;
+const MongoUrl = process.env.MONGO_URI;
 
 const app = express();
 
