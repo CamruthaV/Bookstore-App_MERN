@@ -1,9 +1,10 @@
-
 import express from "express";
-import { PORT, MongoUrl } from "./config.js";
 import mongoose from "mongoose";
 import booksRoute from "./routes/booksRoute.js"
 import cors from "cors";
+
+const PORT = process.env.PORT || 5000;
+const MongoUrl = proces.env.MONGO_URI;
 
 const app = express();
 
