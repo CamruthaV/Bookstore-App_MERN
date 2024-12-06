@@ -4,6 +4,8 @@ import axios from 'axios';
 import BackButton from '../components/BackButton';
 import Spinner from '../components/Spinner';
 
+const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:5555';
+
 const ShowBook = () => {
   const [book, setBooks] = useState({});
   const [loading, setLoading] = useState(false);
@@ -11,7 +13,7 @@ const ShowBook = () => {
 
   useEffect(() => {
     setLoading(true);
-    axios.get(`http://localhost:5555/books/${id}`)
+    axios.get(`${apiUrl}/books/${id}`)
     .then((response) => {
       setBooks(response.data);
       setLoading(false);
